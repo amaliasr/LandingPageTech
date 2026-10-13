@@ -1,6 +1,6 @@
 # R Studio Hub
 
-A responsive English landing page introducing R Studio Hub as a software solutions studio. The design pairs a charcoal and lavender hero with lighter editorial sections and gradual color transitions.
+A responsive English landing page introducing R Studio Hub as a software solutions studio. The design uses charcoal and muted plum surfaces, lavender accents, and subtle transitions throughout. The navigation sits directly on the hero without a surrounding box.
 
 ## Run locally
 

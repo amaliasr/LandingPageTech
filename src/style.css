@@ -3,10 +3,13 @@
 :root {
   --ink: #15131a;
   --dark: #0c0b11;
-  --paper: #f7f7f5;
+  --surface: #19161f;
+  --surface-raised: #211d29;
+  --text: #eeeaf5;
+  --text-muted: #b6acbf;
+  --border: #38313f;
   --lavender: #c2b5f5;
-  --purple: #7961bb;
-  --line: #dedde3;
+  --purple: #bfa8e9;
   --muted: #aaa6b4;
   --font: "DM Sans", sans-serif;
   --heading: "Manrope", sans-serif;
@@ -161,8 +164,9 @@ summary:focus-visible {
   background: #ffffff0b;
 }
 .button-dark {
-  background: #1a1820;
-  color: #faf9ff;
+  background: #302738;
+  color: var(--text);
+  border-color: #51415f;
 }
 .button-dark:hover {
   background: #38303f;
@@ -213,10 +217,6 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border: 1px solid #ffffff15;
-  border-radius: 13px;
-  background: #16141bc4;
-  backdrop-filter: blur(20px);
 }
 .desktop-nav {
   display: flex;
@@ -588,9 +588,8 @@ summary:focus-visible {
   margin-left: -6px;
 }
 .light-section {
-  color: var(--ink);
-  background: var(--paper);
-  color-scheme: light;
+  color: var(--text);
+  background: var(--surface);
 }
 .about {
   padding: 92px 0 98px;
@@ -605,7 +604,7 @@ summary:focus-visible {
   font-size: 9px;
   letter-spacing: 1.8px;
   font-weight: 550;
-  color: #79717f;
+  color: var(--text-muted);
 }
 .tiny-cross {
   font-size: 21px;
@@ -634,12 +633,12 @@ h2 {
 }
 .about-copy p {
   font-size: 14px;
-  color: #736c78;
+  color: var(--text-muted);
   line-height: 1.85;
   margin-bottom: 15px;
 }
 .about-copy p:first-child {
-  color: #252129;
+  color: var(--text);
   font-weight: 550;
 }
 .text-link {
@@ -666,13 +665,13 @@ h2 {
   scroll-margin-top: 30px;
 }
 .service-heading > .eyebrow {
-  color: #8d829c;
+  color: var(--purple);
   font-size: 8px;
   letter-spacing: 1.3px;
 }
 .service-heading p {
   font-size: 12px;
-  color: #7e7782;
+  color: var(--text-muted);
 }
 .services-grid {
   display: grid;
@@ -682,15 +681,15 @@ h2 {
 .service-card {
   position: relative;
   padding: 30px 29px 25px;
-  border: 1px solid #e0dde4;
+  border: 1px solid var(--border);
   border-radius: 13px;
-  background: #fff;
+  background: var(--surface-raised);
   transition:
     border-color 0.25s,
     transform 0.25s;
 }
 .service-card:hover {
-  border-color: #b8a8d3;
+  border-color: #75618d;
   transform: translateY(-4px);
 }
 .service-icon {
@@ -698,9 +697,9 @@ h2 {
   place-items: center;
   width: 44px;
   height: 44px;
-  color: #776397;
-  background: #f0ebf7;
-  border: 1px solid #e9e0f4;
+  color: var(--purple);
+  background: #30273b;
+  border: 1px solid #44364f;
   border-radius: 12px;
   margin-bottom: 27px;
 }
@@ -710,7 +709,7 @@ h2 {
   top: 30px;
   font-family: var(--heading);
   font-size: 10px;
-  color: #c9c1d1;
+  color: #a598b4;
 }
 .service-card h3 {
   font-size: 23px;
@@ -720,7 +719,7 @@ h2 {
 }
 .service-card p {
   font-size: 12px;
-  color: #88808d;
+  color: var(--text-muted);
   line-height: 1.8;
   max-width: 290px;
 }
@@ -735,8 +734,8 @@ h2 {
   border-radius: 4px;
   font-size: 8px;
   letter-spacing: 0.1px;
-  border: 1px solid #eae6ee;
-  color: #8b8392;
+  border: 1px solid #45394f;
+  color: #c0b1ce;
 }
 .work-section {
   padding: 88px 0 70px;
@@ -1211,7 +1210,7 @@ h2 {
 }
 .process-intro > p {
   font-size: 13px;
-  color: #7d7583;
+  color: var(--text-muted);
   line-height: 1.9;
   margin: 25px 0 27px;
   max-width: 375px;
@@ -1227,12 +1226,12 @@ h2 {
   align-items: center;
   gap: 8px;
   margin-top: 40px;
-  color: #a098aa;
+  color: var(--text-muted);
   font-size: 10px;
   line-height: 1.7;
 }
 .process-signature strong {
-  color: #797082;
+  color: var(--text);
   font-weight: 450;
 }
 .process-signature img {
@@ -1246,7 +1245,7 @@ h2 {
   display: flex;
   gap: 22px;
   padding: 25px 0;
-  border-top: 1px solid #e0dbe5;
+  border-top: 1px solid var(--border);
 }
 .process-step:first-child {
   padding-top: 8px;
@@ -1265,7 +1264,7 @@ h2 {
 .process-step p {
   font-size: 12px;
   line-height: 1.8;
-  color: #8a808f;
+  color: var(--text-muted);
   max-width: 330px;
 }
 .process-step > .icon {
@@ -1277,7 +1276,7 @@ h2 {
 }
 .faq-section {
   padding: 52px 0 98px;
-  border-top: 1px solid #eae6ed;
+  border-top: 1px solid var(--border);
 }
 .faq-layout {
   display: grid;
@@ -1299,7 +1298,7 @@ h2 {
   white-space: nowrap;
 }
 .faq-list details {
-  border-bottom: 1px solid #ddd7e5;
+  border-bottom: 1px solid var(--border);
   padding: 0;
 }
 .faq-list summary {
@@ -1327,7 +1326,7 @@ h2 {
   transform: rotate(45deg);
 }
 .faq-list details p {
-  color: #817586;
+  color: var(--text-muted);
   font-size: 12px;
   line-height: 1.9;
   padding: 0 33px 22px 0;
@@ -1435,13 +1434,13 @@ h2 {
 .modal {
   width: min(520px, calc(100vw - 32px));
   max-height: calc(100dvh - 48px);
-  border: 1px solid #e0d6ed;
+  border: 1px solid #4a3d56;
   border-radius: 18px;
   padding: 0;
-  background: #faf8fd;
-  color: #231e2c;
+  background: var(--surface-raised);
+  color: var(--text);
   box-shadow: 0 24px 120px #0009;
-  color-scheme: light;
+  color-scheme: dark;
 }
 .modal::backdrop {
   background: #0c091bcc;
@@ -1458,11 +1457,11 @@ h2 {
   display: grid;
   place-items: center;
   border: 0;
-  background: #eee7f3;
+  background: #382d42;
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  color: #695876;
+  color: var(--text);
 }
 .modal-close .icon {
   width: 17px;
@@ -1470,7 +1469,7 @@ h2 {
 }
 .modal .eyebrow {
   font-size: 8px;
-  color: #a08aac;
+  color: var(--purple);
 }
 .modal h2 {
   font-size: 32px;
@@ -1480,7 +1479,7 @@ h2 {
 .modal p {
   font-size: 13px;
   line-height: 1.8;
-  color: #86758f;
+  color: var(--text-muted);
 }
 .modal form {
   margin-top: 26px;
@@ -1501,12 +1500,12 @@ h2 {
 .modal input,
 .modal select,
 .modal textarea {
-  background: #fff;
-  border: 1px solid #dfd6e5;
+  background: #17131d;
+  border: 1px solid #51425f;
   border-radius: 7px;
   min-height: 44px;
   padding: 11px 12px;
-  color: #312839;
+  color: var(--text);
   font-size: 12px;
   line-height: 1.6;
   width: 100%;
@@ -1528,7 +1527,7 @@ h2 {
 .form-note {
   font-size: 9px;
   line-height: 1.7;
-  color: #98849f;
+  color: var(--text-muted);
   margin-top: 3px;
   text-align: center;
 }
@@ -1541,8 +1540,8 @@ h2 {
   position: relative;
   padding: 12px 0 12px 23px;
   font-size: 12px;
-  border-top: 1px solid #eae3ef;
-  color: #695a76;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
   line-height: 1.7;
 }
 .product-features li:before {
@@ -2413,7 +2412,7 @@ body.modal-open {
   }
   .process-step:first-child {
     padding-top: 23px;
-    border-top: 1px solid #e0dbe5;
+    border-top: 1px solid var(--border);
   }
   .process-step h3 {
     font-size: 17px;
@@ -2535,7 +2534,7 @@ body.modal-open {
     display: none;
   }
 }
-/* Quiet transitions join each dark and light stage without a hard color cut. */
+/* Nearby charcoal tones keep the page continuous between sections. */
 html.lenis {
   scroll-behavior: auto;
 }
@@ -2543,110 +2542,74 @@ html.lenis {
   background: linear-gradient(
     180deg,
     #121017 0,
-    #292331 36px,
-    #5c5365 70px,
-    #a69daf 112px,
-    #ded9e4 154px,
-    var(--paper) 202px
+    #15121b 55px,
+    var(--surface) 120px
   );
-  padding-top: 260px;
+  padding-top: 180px;
 }
 .work-section {
   background: linear-gradient(
     180deg,
-    var(--paper) 0,
-    #ded9e4 42px,
-    #a298ad 86px,
-    #51465d 135px,
-    #231c2d 181px,
-    #100e16 226px
+    var(--surface) 0,
+    #15121c 75px,
+    #100e16 140px
   );
-  padding-top: 280px;
+  padding-top: 190px;
 }
 .testimonials-section {
   background: linear-gradient(
     180deg,
     #100e16 0,
-    #29202f 37px,
-    #5f536b 80px,
-    #aa9eb6 124px,
-    #e0d9e7 170px,
-    var(--paper) 218px
+    #15121b 65px,
+    var(--surface) 130px
   ) !important;
-  padding-top: 274px !important;
+  padding-top: 180px !important;
 }
 .contact-section {
   background: linear-gradient(
     180deg,
-    var(--paper) 0,
-    #ded7e4 43px,
-    #9e90ad 87px,
-    #50405f 137px,
-    #281d35 181px,
-    #171220 226px
+    var(--surface) 0,
+    #1a1523 70px,
+    #171220 140px
   );
-  padding-top: 285px;
-}
-.service-card p,
-.modal p {
-  color: #726779;
-}
-.form-note {
-  color: #726779;
-}
-.service-tags > span {
-  color: #766b80;
-}
-.service-heading p {
-  color: #736979;
-}
-.process-step p {
-  color: #75697b;
-}
-.faq-list details p {
-  color: #73667b;
+  padding-top: 190px;
 }
 @media (max-width: 620px) {
   .about {
     background: linear-gradient(
       180deg,
       #121017 0,
-      #504658 45px,
-      #b3aabd 92px,
-      var(--paper) 145px
+      #15121b 45px,
+      var(--surface) 95px
     );
-    padding-top: 180px;
+    padding-top: 140px;
   }
   .work-section {
     background: linear-gradient(
       180deg,
-      var(--paper) 0,
-      #bbb1c5 43px,
-      #64556f 83px,
-      #2b2136 119px,
-      #100e16 155px
+      var(--surface) 0,
+      #15121c 50px,
+      #100e16 100px
     );
-    padding-top: 190px;
+    padding-top: 145px;
   }
   .testimonials-section {
     background: linear-gradient(
       180deg,
       #100e16 0,
-      #514259 43px,
-      #ae9fb9 88px,
-      var(--paper) 150px
+      #15121b 45px,
+      var(--surface) 95px
     ) !important;
-    padding-top: 185px !important;
+    padding-top: 140px !important;
   }
   .contact-section {
     background: linear-gradient(
       180deg,
-      var(--paper) 0,
-      #b7a7c5 48px,
-      #584368 99px,
-      #171220 153px
+      var(--surface) 0,
+      #1a1523 50px,
+      #171220 100px
     );
-    padding-top: 191px;
+    padding-top: 145px;
   }
   .button,
   .header-contact,
