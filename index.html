@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0b11" />
+    <meta
+      name="description"
+      content="R Studio Hub builds websites, web applications, and business tools around the way you work. Meet the studio behind Dapur Mama Catering, RumahFLOW, and TernaKu."
+    />
+    <meta
+      property="og:title"
+      content="R Studio Hub — Practical software. Real possibilities."
+    />
+    <meta
+      property="og:description"
+      content="An independent software solutions studio. Websites, applications, and everyday tools built around your business."
+    />
+    <meta property="og:type" content="website" />
+    <title>R Studio Hub — Software built around you</title>
+    <link rel="icon" type="image/png" href="./assets/logo-r.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/sections.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg
+      class="icon-defs"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-up-right" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20" />
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+      </symbol>
+      <symbol id="i-window" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="3" />
+        <path d="M2 9h20m-15-3h.01M10 6h.01" />
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path d="M4 3v17h17M8 15l4-4 4 2 5-7" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24">
+        <path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8Z" />
+      </symbol>
+      <symbol id="i-house" viewBox="0 0 24 24">
+        <path d="m3 10 9-7 9 7v10H3Zm6 10v-7h6v7" />
+      </symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24">
+        <path d="M20 3C8 2 2 9 6 16c7 5 15-2 14-13ZM4 21l11-12" />
+      </symbol>
+      <symbol id="i-food" viewBox="0 0 24 24">
+        <path d="M3 13a9 9 0 0 1 18 0M2 16h20M12 4V2M5 20h14" />
+      </symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="R Studio Hub home"
+        ><img src="./assets/logo-r.png" alt="" width="44" height="44" /><span
+          >Studio Hub<span class="brand-dot">.</span></span
+        ></a
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">The studio</a><a href="#services">What we do</a
+        ><a href="#work">Our work</a><a href="#process">Our approach</a>
+      </nav>
+      <a class="header-contact" href="https://wa.me/6281944496015" data-contact
+        >Let’s talk <svg class="icon"><use href="#i-up-right" /></svg
+      ></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        id="mobile-menu"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden
+      >
+        <a href="#about">The studio</a><a href="#services">What we do</a
+        ><a href="#work">Our work</a><a href="#process">Our approach</a
+        ><a href="https://wa.me/6281944496015" data-contact>Let’s talk ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            A SMALL STUDIO. A WIDE WORLD OF POSSIBILITIES.
+          </p>
+          <h1 id="hero-title">
+            Practical software.<br /><span>Real possibilities.</span>
+          </h1>
+          <p class="hero-description">
+            Your business has its own way of working.<br
+              class="desktop-break"
+            />
+            We build the websites, apps, and tools that fit right in.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-lavender"
+              href="https://wa.me/6281944496015"
+              data-contact
+              >Let’s build something
+              <svg class="icon"><use href="#i-up-right" /></svg></a
+            ><a class="button button-ghost" href="#work"
+              >Explore our work <svg class="icon"><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img
+            class="orbit-art"
+            src="./assets/hub-orbit.png"
+            alt=""
+            width="1536"
+            height="864"
+            fetchpriority="high"
+          />
+          <div class="hub-node">
+            <img
+              src="./assets/logo-r.png"
+              alt=""
+              width="140"
+              height="140"
+            /><span>YOUR NEXT IDEA</span>
+          </div>
+          <div class="orbit-chip chip-web">
+            <span class="chip-icon"
+              ><svg class="icon"><use href="#i-window" /></svg></span
+            ><span><small>Thoughtfully designed</small>Websites & apps</span
+            ><span class="chip-indicator"></span>
+          </div>
+          <div class="orbit-chip chip-tools">
+            <span class="chip-icon"
+              ><svg class="icon"><use href="#i-grid" /></svg></span
+            ><span><small>Built for your day-to-day</small>Business tools</span
+            ><svg class="icon chip-arrow"><use href="#i-up-right" /></svg>
+          </div>
+          <div class="orbit-caption">
+            <span></span> FROM AN IDEA TO SOMETHING PEOPLE USE <span></span>
+          </div>
+          <span class="orbital-dot dot-one"></span
+          ><span class="orbital-dot dot-two"></span>
+        </div>
+        <div class="hero-foot">
+          <span>SOFTWARE SOLUTIONS, WITH A HUMAN SIDE.</span
+          ><a href="#about">A little more about us <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="studio-strip" aria-label="Products from our studio">
+        <div class="section-shell studio-strip-inner">
+          <p>Different needs.<br /><strong>One thoughtful approach.</strong></p>
+          <div class="product-wordmark mama-wordmark">
+            <svg class="icon"><use href="#i-food" /></svg>Dapur Mama<span
+              >CATERING</span
+            >
+          </div>
+          <div class="product-wordmark rumah-wordmark">
+            <svg class="icon"><use href="#i-house" /></svg>Rumah<span
+              >FLOW</span
+            >
+          </div>
+          <div class="product-wordmark ternaku-wordmark">
+            <svg class="icon"><use href="#i-leaf" /></svg>TernaKu<span
+              class="tiny-dot"
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about light-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">01 / THE STUDIO</span
+            ><span class="tiny-cross">+</span>
+          </div>
+          <div class="about-grid">
+            <h2 class="reveal" id="about-title">
+              Technology should<br />make things
+              <span class="serif-accent">simpler.</span>
+            </h2>
+            <div class="about-copy reveal">
+              <p>That’s where we come in.</p>
+              <p>
+                We’re R Studio Hub, an independent software solutions studio. We
+                turn everyday problems into useful digital products, from taking
+                a catering order to keeping track of household spending.
+              </p>
+              <p>
+                We like clear screens, sensible workflows, and software you
+                don’t need a manual to enjoy.
+              </p>
+              <a class="text-link" href="#services"
+                >Here’s how we can help
+                <svg class="icon"><use href="#i-arrow" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="service-heading" id="services">
+            <span class="eyebrow">MADE TO FIT, NOT FIT IN.</span>
+            <p>A good starting point for whatever comes next.</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg class="icon"><use href="#i-window" /></svg>
+              </div>
+              <span class="service-index">01</span>
+              <h3>Websites that <br />do more.</h3>
+              <p>
+                A clear place for people to find you, understand what you offer,
+                and take the next step.
+              </p>
+              <div class="service-tags">
+                <span>Business websites</span><span>Ordering flows</span>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg class="icon"><use href="#i-code" /></svg>
+              </div>
+              <span class="service-index">02</span>
+              <h3>Software built <br />around your work.</h3>
+              <p>
+                Bring your orders, records, and daily tasks into a tool that
+                works the way your team does.
+              </p>
+              <div class="service-tags">
+                <span>Web applications</span><span>Internal tools</span>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-icon">
+                <svg class="icon"><use href="#i-chart" /></svg>
+              </div>
+              <span class="service-index">03</span>
+              <h3>A clearer view <br />of the details.</h3>
+              <p>
+                Dashboards and reports that help you see what’s happening,
+                without getting lost in spreadsheets.
+              </p>
+              <div class="service-tags">
+                <span>Dashboards</span><span>Reports & records</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">02 / FROM OUR STUDIO</span
+            ><span class="tiny-cross">+</span>
+          </div>
+          <div class="section-title-row">
+            <h2 class="reveal" id="work-title">
+              Different businesses.<br /><span class="muted"
+                >Same care in the details.</span
+              >
+            </h2>
+            <p class="reveal">
+              A few things we’re building.<br />Each starts with a real,
+              everyday need.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div
+                class="project-visual visual-mama"
+                aria-label="Illustrative catering order interface"
+              >
+                <span class="visual-label"
+                  >CATERING, WITHOUT THE BACK-AND-FORTH.</span
+                >
+                <div class="mini-window mama-window">
+                  <div class="mini-topbar">
+                    <span class="mama-icon"
+                      ><svg class="icon"><use href="#i-food" /></svg></span
+                    ><strong>Dapur Mama</strong
+                    ><span class="mini-menu">☰</span>
+                  </div>
+                  <div class="mama-preview-copy">
+                    <span>GOOD FOOD. GOOD COMPANY.</span
+                    ><strong>Made with care.<br />Shared with everyone.</strong>
+                  </div>
+                  <div class="meal-grid">
+                    <div class="meal-tile">
+                      <span class="meal-plate plate-one"><i></i></span
+                      ><span>Family meals</span>
+                    </div>
+                    <div class="meal-tile">
+                      <span class="meal-plate plate-two"><i></i></span
+                      ><span>For every occasion</span>
+                    </div>
+                  </div>
+                  <div class="mini-action">Find your menu <span>↗</span></div>
+                </div>
+                <div class="floating-note">
+                  <span class="note-check">✓</span> A simpler way to order
+                </div>
+                <span class="concept-label">Interface illustration</span>
+              </div>
+              <div class="project-info">
+                <span class="project-category">FOOD & HOSPITALITY</span>
+                <h3>Dapur Mama Catering</h3>
+                <p>
+                  From choosing a menu to confirming an order. A simpler
+                  experience for customers and the team behind the kitchen.
+                </p>
+                <button class="project-link" data-product="dapur" type="button">
+                  A closer look
+                  <svg class="icon"><use href="#i-up-right" /></svg>
+                </button>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div
+                class="project-visual visual-rumah"
+                aria-label="Illustrative household finance dashboard"
+              >
+                <span class="visual-label">A LITTLE MORE CLARITY AT HOME.</span>
+                <div class="mini-window finance-window">
+                  <div class="mini-topbar">
+                    <span class="rumah-icon"
+                      ><svg class="icon"><use href="#i-house" /></svg></span
+                    ><strong>RumahFLOW</strong
+                    ><span class="mini-avatar">R</span>
+                  </div>
+                  <div class="finance-summary">
+                    <span>Your household, at a glance.</span
+                    ><strong>Room for better plans.</strong>
+                  </div>
+                  <div class="finance-graph" aria-hidden="true">
+                    <i style="--bar: 32%"></i><i style="--bar: 51%"></i
+                    ><i style="--bar: 40%"></i><i style="--bar: 64%"></i
+                    ><i style="--bar: 56%"></i><i style="--bar: 80%"></i
+                    ><i style="--bar: 71%"></i><i style="--bar: 93%"></i>
+                  </div>
+                  <div class="finance-legend">
+                    <span><i></i> Income</span><span><i></i> Expenses</span
+                    ><span>Cash flow ↗</span>
+                  </div>
+                  <div class="finance-row">
+                    <span class="finance-row-icon">↗</span
+                    ><span>Accounts & balances</span><span>→</span>
+                  </div>
+                </div>
+                <span class="concept-label">Interface illustration</span>
+              </div>
+              <div class="project-info">
+                <span class="project-category">HOUSEHOLD FINANCE</span>
+                <h3>RumahFLOW</h3>
+                <p>
+                  A clearer picture of what comes in, what goes out, and where
+                  things stand. Everyday finances, kept in one place.
+                </p>
+                <button class="project-link" data-product="rumah" type="button">
+                  A closer look
+                  <svg class="icon"><use href="#i-up-right" /></svg>
+                </button>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div
+                class="project-visual visual-ternaku"
+                aria-label="Illustrative poultry management interface"
+              >
+                <span class="visual-label">MORE TIME FOR THE FARM.</span>
+                <div class="mini-window farm-window">
+                  <div class="mini-topbar">
+                    <span class="farm-icon"
+                      ><svg class="icon"><use href="#i-leaf" /></svg></span
+                    ><strong>TernaKu</strong><span class="mini-avatar">T</span>
+                  </div>
+                  <div class="farm-title">
+                    <span>THE EVERYDAY, IN ORDER.</span
+                    ><strong
+                      >A good day starts<br />with a clear picture.</strong
+                    >
+                  </div>
+                  <div class="farm-tiles">
+                    <div>
+                      <span class="farm-tile-icon">◒</span
+                      ><strong>Production</strong><span>Daily egg records</span>
+                    </div>
+                    <div>
+                      <span class="farm-tile-icon">▤</span
+                      ><strong>Inventory</strong><span>Stock & feed</span>
+                    </div>
+                  </div>
+                  <div class="farm-record">
+                    <span class="note-check">✓</span
+                    ><span>Everything in its place.</span><span>↗</span>
+                  </div>
+                </div>
+                <span class="concept-label">Interface illustration</span>
+              </div>
+              <div class="project-info">
+                <span class="project-category">FARM OPERATIONS</span>
+                <h3>TernaKu</h3>
+                <p>
+                  Keep the daily details of poultry farming in order, from egg
+                  production and feed to stock and sales.
+                </p>
+                <button
+                  class="project-link"
+                  data-product="ternaku"
+                  type="button"
+                >
+                  A closer look
+                  <svg class="icon"><use href="#i-up-right" /></svg>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="work-note">
+            <span class="status-dot"></span>
+            <p>
+              Have a different kind of business?
+              <a href="https://wa.me/6281944496015" data-contact
+                >We’d like to hear about it. ↗</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonials-section light-section"
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">03 / WHAT PEOPLE SAY</span
+            ><span class="tiny-cross">+</span>
+          </div>
+          <div class="testimonials-heading reveal">
+            <div>
+              <h2 id="testimonials-title">
+                What people <span class="serif-accent">say.</span>
+              </h2>
+              <p>
+                A little less friction. A little more time for the work that
+                matters.
+              </p>
+            </div>
+            <div class="testimonials-disclosure">
+              <span>Sample testimonials</span>
+              <p>
+                These fictional examples show the layout. Real client stories
+                will take their place.
+              </p>
+            </div>
+          </div>
+          <div class="testimonials-grid">
+            <figure class="testimonial-card testimonial-featured reveal">
+              <div class="testimonial-top">
+                <span class="testimonial-quote-mark" aria-hidden="true">“</span
+                ><span>SAMPLE STORY / 01</span>
+              </div>
+              <blockquote>
+                <p>
+                  “We needed a simpler way to keep track of orders. Having
+                  everything in one place would make the busy days feel a lot
+                  more manageable.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-avatar" aria-hidden="true">AR</span
+                ><span
+                  ><strong>Aulia R.</strong
+                  ><span>Small business owner · Fictional example</span></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card reveal">
+              <div class="testimonial-top">
+                <span class="testimonial-quote-mark" aria-hidden="true">“</span
+                ><span>SAMPLE STORY / 02</span>
+              </div>
+              <blockquote>
+                <p>
+                  “The best part would be opening a dashboard and knowing where
+                  things stand. Less chasing updates, more time to get on with
+                  the work.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-avatar" aria-hidden="true">BA</span
+                ><span
+                  ><strong>Bima A.</strong
+                  ><span>Operations lead · Fictional example</span></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card reveal">
+              <div class="testimonial-top">
+                <span class="testimonial-quote-mark" aria-hidden="true">“</span
+                ><span>SAMPLE STORY / 03</span>
+              </div>
+              <blockquote>
+                <p>
+                  “I’d want someone who listens first and explains things
+                  clearly. Starting small, seeing it work, and building from
+                  there makes sense to me.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-avatar" aria-hidden="true">NS</span
+                ><span
+                  ><strong>Nadia S.</strong
+                  ><span>Founder · Fictional example</span></span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="process-section light-section"
+        id="process"
+        aria-labelledby="process-title"
+      >
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">04 / HOW WE WORK</span
+            ><span class="tiny-cross">+</span>
+          </div>
+          <div class="process-layout">
+            <div class="process-intro reveal">
+              <h2 id="process-title">
+                Good work starts<br />with a
+                <span class="serif-accent">conversation.</span>
+              </h2>
+              <p>
+                You don’t need a finished brief or a list of technical
+                requirements. Tell us what’s getting in the way. We’ll work out
+                the next step together.
+              </p>
+              <a
+                class="button button-dark"
+                href="https://wa.me/6281944496015"
+                data-contact
+                >Tell us what you have in mind
+                <svg class="icon"><use href="#i-up-right" /></svg
+              ></a>
+              <div class="process-signature">
+                <img
+                  src="./assets/logo-r.png"
+                  alt=""
+                  width="52"
+                  height="52"
+                /><span
+                  >Less guesswork.<br /><strong
+                    >More working together.</strong
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="process-steps">
+              <article class="process-step reveal">
+                <span class="step-number">01</span>
+                <div>
+                  <h3>First, we listen.</h3>
+                  <p>
+                    We get to know your business, your people, and the thing
+                    you’re trying to make better.
+                  </p>
+                </div>
+                <svg class="icon"><use href="#i-plus" /></svg>
+              </article>
+              <article class="process-step reveal">
+                <span class="step-number">02</span>
+                <div>
+                  <h3>Then, we make it clear.</h3>
+                  <p>
+                    We map out the essentials and shape the screens, so you can
+                    see how it will work before we build.
+                  </p>
+                </div>
+                <svg class="icon"><use href="#i-plus" /></svg>
+              </article>
+              <article class="process-step reveal">
+                <span class="step-number">03</span>
+                <div>
+                  <h3>We build, and you’re part of it.</h3>
+                  <p>
+                    We turn the plan into working software, share progress, and
+                    make room for useful feedback.
+                  </p>
+                </div>
+                <svg class="icon"><use href="#i-plus" /></svg>
+              </article>
+              <article class="process-step reveal">
+                <span class="step-number">04</span>
+                <div>
+                  <h3>Ready for the real world.</h3>
+                  <p>
+                    We check the details, help you get started, and talk through
+                    what support you’ll need next.
+                  </p>
+                </div>
+                <svg class="icon"><use href="#i-check" /></svg>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="owner-section light-section"
+        id="owner"
+        aria-labelledby="owner-title"
+      >
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">05 / BEHIND R STUDIO HUB</span
+            ><span class="tiny-cross">+</span>
+          </div>
+          <div class="owner-layout">
+            <div class="owner-portrait-stage reveal">
+              <span class="portrait-caption"
+                >A SMALL STUDIO. A PERSONAL APPROACH.</span
+              >
+              <div class="portrait-orbit" aria-hidden="true"></div>
+              <img
+                src="./assets/owner-portrait.png"
+                alt="Owner of R Studio Hub"
+                width="1087"
+                height="1446"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="owner-portrait-label">
+                <span class="owner-label-mark" aria-hidden="true"
+                  ><img
+                    src="./assets/logo-r.png"
+                    alt=""
+                    width="44"
+                    height="44" /></span
+                ><span><strong>Owner</strong><span>R Studio Hub</span></span>
+              </div>
+            </div>
+            <div class="owner-copy reveal">
+              <span class="eyebrow"
+                >HELLO, FROM THE OTHER SIDE OF THE SCREEN.</span
+              >
+              <h2 id="owner-title">
+                The person<br />behind the
+                <span class="serif-accent">studio.</span>
+              </h2>
+              <p class="owner-lead">
+                Useful software starts with paying attention.
+              </p>
+              <p>
+                R Studio Hub is where I bring useful ideas to life. Some start
+                in a kitchen, others at home or on a farm. The aim is the same:
+                make the work a little easier.
+              </p>
+              <p>
+                That’s the thinking behind Dapur Mama Catering, RumahFLOW, and
+                TernaKu—and the starting point for whatever we build next.
+              </p>
+              <p>
+                Have something in mind? Let’s talk it through, in plain
+                language.
+              </p>
+              <div class="owner-signature">
+                <strong>Owner</strong><span>R Studio Hub</span>
+              </div>
+              <a
+                class="text-link"
+                href="https://wa.me/6281944496015"
+                data-contact
+                >Let’s get to know your idea
+                <svg class="icon"><use href="#i-up-right" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section light-section" aria-labelledby="faq-title">
+        <div class="section-shell faq-layout">
+          <div class="faq-heading reveal">
+            <span class="section-number">A FEW THINGS YOU MIGHT ASK</span>
+            <h2 id="faq-title">
+              Before we say <span class="serif-accent">hello.</span>
+            </h2>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>
+                I have an idea, but no technical background. Is that okay?<svg
+                  class="icon"
+                >
+                  <use href="#i-plus" />
+                </svg>
+              </summary>
+              <p>
+                Of course. Tell us what you want to make easier or what you’d
+                like to build. We’ll help you figure out what the software needs
+                to do and explain the options in plain language.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Do you only work in the industries shown here?<svg class="icon">
+                  <use href="#i-plus" />
+                </svg>
+              </summary>
+              <p>
+                No. Those products show a few of the problems we work on. If
+                your business looks different, we’d still like to hear what you
+                need.
+              </p>
+            </details>
+            <details>
+              <summary>
+                How much will a project cost, and how long will it take?<svg
+                  class="icon"
+                >
+                  <use href="#i-plus" />
+                </svg>
+              </summary>
+              <p>
+                That depends on the scope, the features, and what you already
+                have. We’ll talk through the work with you before putting
+                together an estimate. There’s no one-size-fits-all package.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can we start small and add more later?<svg class="icon">
+                  <use href="#i-plus" />
+                </svg>
+              </summary>
+              <p>
+                Yes. We can focus on the part that matters most first, then plan
+                the next steps around what you learn from using it.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="section-shell contact-inner">
+          <p class="eyebrow">
+            <span class="status-dot"></span> YOUR NEXT CHAPTER STARTS WITH A
+            HELLO.
+          </p>
+          <h2 id="contact-title">
+            Got something<br />on your <span class="serif-accent">mind?</span>
+          </h2>
+          <p>
+            A new idea. A messy workflow. A website that’s overdue.<br />Let’s
+            see what we can make of it.
+          </p>
+          <a
+            class="button button-lavender"
+            href="https://wa.me/6281944496015"
+            data-contact
+            >Let’s talk about it
+            <svg class="icon"><use href="#i-up-right" /></svg></a
+          ><span class="contact-footnote"
+            >A real conversation. No complicated pitch.</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell">
+        <div class="footer-main">
+          <a class="brand" href="#home" aria-label="R Studio Hub home"
+            ><img
+              src="./assets/logo-r.png"
+              alt=""
+              width="44"
+              height="44"
+            /><span>Studio Hub<span class="brand-dot">.</span></span></a
+          >
+          <p>Thoughtful software.<br />For the way you work.</p>
+          <a
+            class="footer-contact"
+            href="https://wa.me/6281944496015"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Say hello on WhatsApp
+            <svg class="icon"><use href="#i-up-right" /></svg
+            ><span>+62 819-4449-6015</span></a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> R Studio Hub</span
+          ><span>Built with care. Made to be used.</span
+          ><a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog
+      id="contact-dialog"
+      class="modal"
+      aria-labelledby="contact-dialog-title"
+    >
+      <div class="modal-inner">
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close contact form"
+        >
+          <svg class="icon"><use href="#i-close" /></svg></button
+        ><span class="eyebrow">LET’S START SOMEWHERE.</span>
+        <h2 id="contact-dialog-title">What’s on your mind?</h2>
+        <p>You can start with an idea or just a problem you’d like to solve.</p>
+        <form id="contact-form">
+          <label for="project-name">Your name <span>(optional)</span></label
+          ><input
+            id="project-name"
+            name="name"
+            autocomplete="name"
+            maxlength="80"
+            placeholder="What should we call you?"
+          /><label for="project-type">What are you thinking about?</label
+          ><select id="project-type" name="type">
+            <option>A website</option>
+            <option>A web application</option>
+            <option>A business tool or dashboard</option>
+            <option>Something else — let’s talk</option></select
+          ><label for="project-message">A little about it</label
+          ><textarea
+            id="project-message"
+            name="message"
+            rows="4"
+            required
+            maxlength="2000"
+            placeholder="Tell us what you’d like to build or make easier…"
+          ></textarea
+          ><button class="button button-dark" type="submit">
+            Continue on WhatsApp
+            <svg class="icon"><use href="#i-up-right" /></svg></button
+          ><small class="form-note"
+            >This opens WhatsApp with your message ready to send. Nothing is
+            submitted here.</small
+          >
+        </form>
+      </div>
+    </dialog>
+    <dialog
+      id="product-dialog"
+      class="modal product-modal"
+      aria-labelledby="product-dialog-title"
+    >
+      <div class="modal-inner">
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close product details"
+        >
+          <svg class="icon"><use href="#i-close" /></svg></button
+        ><span id="product-category" class="eyebrow"></span>
+        <h2 id="product-dialog-title"></h2>
+        <p id="product-description"></p>
+        <ul id="product-features" class="product-features"></ul>
+        <p class="product-modal-note">
+          Want something like this for your business?
+        </p>
+        <a
+          class="button button-dark"
+          id="product-contact"
+          href="https://wa.me/6281944496015"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Let’s talk <svg class="icon"><use href="#i-up-right" /></svg
+        ></a>
+      </div>
+    </dialog>
+    <noscript
+      ><p class="noscript-note">
+        You can reach us directly on
+        <a href="https://wa.me/6281944496015">WhatsApp</a>. Product details are
+        summarized in the page above.
+      </p></noscript
+    >
+  </body>
+</html>
