@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("../vendor/lenis.css");
+@import url("../public/vendor/lenis.css");
 :root {
   --ink: #15131a;
   --dark: #0c0b11;

@@ -1,0 +1,82 @@
+/* The original mouse pointer stays visible; all decoration ignores input. */
+.pointer-effects,
+.pointer-spotlight {
+  display: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .pointer-effects {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 180ms ease;
+    contain: strict;
+  }
+  .pointer-effects.is-visible {
+    opacity: 1;
+  }
+  .pointer-halo,
+  .pointer-ring {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 0;
+    height: 0;
+    will-change: transform;
+  }
+  .pointer-halo::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgb(191 168 233 / 11%) 0,
+      rgb(162 137 214 / 4%) 34%,
+      transparent 70%
+    );
+  }
+  .pointer-ring::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgb(211 191 245 / 58%);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition:
+      opacity 180ms ease,
+      transform 200ms ease;
+  }
+  .pointer-effects.is-interactive .pointer-ring::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .pointer-spotlight-host {
+    position: relative;
+  }
+  .pointer-spotlight {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: inherit;
+    opacity: 0;
+    background: radial-gradient(
+      310px circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+      rgb(194 181 245 / 10%),
+      transparent 75%
+    );
+    transition: opacity 280ms ease;
+  }
+  .pointer-spotlight-active > .pointer-spotlight {
+    opacity: 1;
+  }
+}

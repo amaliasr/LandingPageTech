@@ -70,10 +70,5 @@ test("all local image and source references exist before publication", async () 
     (match) => match[1],
   );
   for (const ref of new Set(refs))
-    await access(
-      new URL(
-        `../${ref.startsWith("assets/") ? "public/" : ""}${ref}`,
-        import.meta.url,
-      ),
-    );
+    await access(new URL(`../${ref}`, import.meta.url));
 });

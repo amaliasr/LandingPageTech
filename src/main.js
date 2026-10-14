@@ -1,5 +1,6 @@
 import { products, createWhatsAppUrl } from "./content.js";
-import Lenis from "../vendor/lenis.mjs";
+import Lenis from "../public/vendor/lenis.js";
+import "./pointer-effects.js";
 
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
 let smoothScroll;

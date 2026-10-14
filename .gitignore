@@ -1,6 +1,7 @@
 node_modules/
 dist/
-public/vendor/
+public/vendor/*.map
+public/vendor/*.mjs
 .env
 .env.*
 !.env.example

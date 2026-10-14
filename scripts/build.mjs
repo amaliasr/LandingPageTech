@@ -11,5 +11,10 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(path.join(root, "index.html"), path.join(output, "index.html"));
 await cp(path.join(root, "src"), path.join(output, "src"), { recursive: true });
-await cp(path.join(root, "public"), output, { recursive: true });
+await cp(path.join(root, "public"), path.join(output, "public"), {
+  recursive: true,
+  filter: (source) => !/\.(?:map|mjs)$/.test(source),
+});
+for (const file of ["robots.txt", "sitemap.xml"])
+  await cp(path.join(root, file), path.join(output, file));
 console.log(`Static site built at ${output}`);

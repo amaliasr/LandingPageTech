@@ -6,19 +6,47 @@
     <meta name="theme-color" content="#0c0b11" />
     <meta
       name="description"
-      content="R Studio Hub builds websites, web applications, and business tools around the way you work. Meet the studio behind Dapur Mama Catering, RumahFLOW, and TernaKu."
+      content="R Studio Hub builds custom websites, web applications, and business tools in Indonesia. Meet the studio behind Dapur Mama Catering, RumahFLOW, and TernaKu."
     />
+    <link rel="canonical" href="https://rstudiohub.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta
       property="og:title"
-      content="R Studio Hub — Practical software. Real possibilities."
+      content="R Studio Hub | Custom Websites & Software Solutions"
     />
     <meta
       property="og:description"
       content="An independent software solutions studio. Websites, applications, and everyday tools built around your business."
     />
     <meta property="og:type" content="website" />
-    <title>R Studio Hub — Software built around you</title>
-    <link rel="icon" type="image/png" href="./assets/logo-r.png" />
+    <meta property="og:url" content="https://rstudiohub.com/" />
+    <meta property="og:site_name" content="R Studio Hub" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://rstudiohub.com/public/assets/hub-orbit.png"
+    />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
+    <meta
+      property="og:image:alt"
+      content="Lavender and chrome orbital artwork for R Studio Hub"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="R Studio Hub | Custom Websites & Software Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Thoughtful websites, web applications, and business tools. Independent software solutions from Indonesia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rstudiohub.com/public/assets/hub-orbit.png"
+    />
+    <title>R Studio Hub | Custom Websites & Software Solutions</title>
+    <link rel="icon" type="image/png" href="./public/assets/logo-r.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,6 +55,75 @@
     />
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./src/sections.css" />
+    <link rel="stylesheet" href="./src/story.css" />
+    <link rel="stylesheet" href="./src/testimonials.css" />
+    <link rel="stylesheet" href="./src/pointer-effects.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://rstudiohub.com/#organization",
+            "name": "R Studio Hub",
+            "url": "https://rstudiohub.com/",
+            "logo": "https://rstudiohub.com/public/assets/logo-r.png",
+            "description": "An independent software solutions studio in Indonesia building custom websites, web applications, and business tools.",
+            "telephone": "+62-819-4449-6015",
+            "founder": { "@id": "https://rstudiohub.com/#amalia" },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Software solutions",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom website development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Web applications and internal business tools"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Dashboards and reporting tools"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://rstudiohub.com/#amalia",
+            "name": "Amalia Safira Rhamadany",
+            "jobTitle": "Owner",
+            "url": "https://rstudiohub.com/#owner",
+            "image": "https://rstudiohub.com/public/assets/owner-portrait.png",
+            "worksFor": { "@id": "https://rstudiohub.com/#organization" },
+            "sameAs": [
+              "https://www.instagram.com/amaliasafirar/",
+              "https://www.linkedin.com/in/amalia-safira-rhamadany-b48476148/",
+              "https://github.com/amaliasr"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://rstudiohub.com/#website",
+            "url": "https://rstudiohub.com/",
+            "name": "R Studio Hub",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://rstudiohub.com/#organization" }
+          }
+        ]
+      }
+    </script>
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
@@ -83,13 +180,17 @@
 
     <header class="site-header">
       <a class="brand" href="#home" aria-label="R Studio Hub home"
-        ><img src="./assets/logo-r.png" alt="" width="44" height="44" /><span
-          >Studio Hub<span class="brand-dot">.</span></span
-        ></a
+        ><img
+          src="./public/assets/logo-r.png"
+          alt=""
+          width="44"
+          height="44"
+        /><span>Studio Hub<span class="brand-dot">.</span></span></a
       >
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#about">The studio</a><a href="#services">What we do</a
-        ><a href="#work">Our work</a><a href="#process">Our approach</a>
+        ><a href="#work">Our work</a><a href="#process">Our approach</a
+        ><a href="#journey">Our story</a>
       </nav>
       <a class="header-contact" href="https://wa.me/6281944496015" data-contact
         >Let’s talk <svg class="icon"><use href="#i-up-right" /></svg
@@ -146,7 +247,7 @@
         <div class="hero-art" aria-hidden="true">
           <img
             class="orbit-art"
-            src="./assets/hub-orbit.png"
+            src="./public/assets/hub-orbit.png"
             alt=""
             width="1536"
             height="864"
@@ -154,7 +255,7 @@
           />
           <div class="hub-node">
             <img
-              src="./assets/logo-r.png"
+              src="./public/assets/logo-r.png"
               alt=""
               width="140"
               height="140"
@@ -474,86 +575,110 @@
       >
         <div class="section-shell">
           <div class="section-kicker reveal">
-            <span class="section-number">03 / WHAT PEOPLE SAY</span
-            ><span class="tiny-cross">+</span>
+            <span class="section-number">03 / WHAT PEOPLE SAY</span>
+            <span class="tiny-cross" aria-hidden="true">+</span>
           </div>
-          <div class="testimonials-heading reveal">
-            <div>
-              <h2 id="testimonials-title">
-                What people <span class="serif-accent">say.</span>
-              </h2>
+
+          <div class="voices-heading reveal">
+            <span class="voices-label"
+              >THE PEOPLE SIDE OF BUILDING SOFTWARE</span
+            >
+            <h2 id="testimonials-title">
+              Good work.<br />Shared <span class="serif-accent">stories.</span>
+            </h2>
+            <p>
+              Clear conversations. Fewer loose ends. A little more room to focus
+              on the work that matters.
+            </p>
+            <div class="voices-disclosure">
+              <span>Sample stories</span>
               <p>
-                A little less friction. A little more time for the work that
-                matters.
+                Fictional examples for this preview. Real client stories will
+                take their place.
               </p>
             </div>
-            <div class="testimonials-disclosure">
-              <span>Sample testimonials</span>
-              <p>
-                These fictional examples show the layout. Real client stories
-                will take their place.
-              </p>
-            </div>
           </div>
-          <div class="testimonials-grid">
-            <figure class="testimonial-card testimonial-featured reveal">
-              <div class="testimonial-top">
-                <span class="testimonial-quote-mark" aria-hidden="true">“</span
-                ><span>SAMPLE STORY / 01</span>
+
+          <div class="voices-wall">
+            <figure class="voices-card voices-card-featured reveal">
+              <div class="voices-card-top">
+                <span class="voices-topic">A SHARED WAY FORWARD</span>
+                <span class="voices-quote-mark" aria-hidden="true">“</span>
               </div>
               <blockquote>
                 <p>
-                  “We needed a simpler way to keep track of orders. Having
-                  everything in one place would make the busy days feel a lot
-                  more manageable.”
+                  “It felt like working with someone on our team. We could ask
+                  simple questions, get straight answers, and see the idea take
+                  shape.”
                 </p>
               </blockquote>
               <figcaption>
-                <span class="testimonial-avatar" aria-hidden="true">AR</span
-                ><span
-                  ><strong>Aulia R.</strong
-                  ><span>Small business owner · Fictional example</span></span
-                >
+                <span class="voices-avatar" aria-hidden="true">PO</span>
+                <span class="voices-person">
+                  <strong>A project owner</strong>
+                  <span>Illustrative testimonial</span>
+                </span>
+              </figcaption>
+              <span class="voices-card-flourish" aria-hidden="true">↗</span>
+            </figure>
+
+            <figure class="voices-card voices-card-clarity reveal">
+              <div class="voices-card-top">
+                <span class="voices-topic">LESS GUESSWORK</span>
+                <span class="voices-quote-mark" aria-hidden="true">“</span>
+              </div>
+              <blockquote>
+                <p>
+                  “A clear plan, regular updates, and no need to chase for
+                  answers. We always knew what came next.”
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="voices-avatar" aria-hidden="true">OL</span>
+                <span class="voices-person">
+                  <strong>An operations lead</strong>
+                  <span>Illustrative testimonial</span>
+                </span>
               </figcaption>
             </figure>
-            <figure class="testimonial-card reveal">
-              <div class="testimonial-top">
-                <span class="testimonial-quote-mark" aria-hidden="true">“</span
-                ><span>SAMPLE STORY / 02</span>
+
+            <figure class="voices-card voices-card-workflow reveal">
+              <div class="voices-card-top">
+                <span class="voices-topic">MADE FOR THE EVERYDAY</span>
+                <span class="voices-quote-mark" aria-hidden="true">“</span>
               </div>
               <blockquote>
                 <p>
-                  “The best part would be opening a dashboard and knowing where
-                  things stand. Less chasing updates, more time to get on with
-                  the work.”
+                  “The small details made a difference. Fewer tabs, fewer
+                  repeated steps, and more time to get things done.”
                 </p>
               </blockquote>
               <figcaption>
-                <span class="testimonial-avatar" aria-hidden="true">BA</span
-                ><span
-                  ><strong>Bima A.</strong
-                  ><span>Operations lead · Fictional example</span></span
-                >
+                <span class="voices-avatar" aria-hidden="true">SB</span>
+                <span class="voices-person">
+                  <strong>A small business owner</strong>
+                  <span>Illustrative testimonial</span>
+                </span>
               </figcaption>
             </figure>
-            <figure class="testimonial-card reveal">
-              <div class="testimonial-top">
-                <span class="testimonial-quote-mark" aria-hidden="true">“</span
-                ><span>SAMPLE STORY / 03</span>
+
+            <figure class="voices-card voices-card-collaboration reveal">
+              <div class="voices-card-top">
+                <span class="voices-topic">ROOM TO START SMALL</span>
+                <span class="voices-quote-mark" aria-hidden="true">“</span>
               </div>
               <blockquote>
                 <p>
-                  “I’d want someone who listens first and explains things
-                  clearly. Starting small, seeing it work, and building from
-                  there makes sense to me.”
+                  “We didn’t have every detail figured out. Talking it through
+                  helped us choose a useful first step, then build from there.”
                 </p>
               </blockquote>
               <figcaption>
-                <span class="testimonial-avatar" aria-hidden="true">NS</span
-                ><span
-                  ><strong>Nadia S.</strong
-                  ><span>Founder · Fictional example</span></span
-                >
+                <span class="voices-avatar" aria-hidden="true">GT</span>
+                <span class="voices-person">
+                  <strong>A growing team</strong>
+                  <span>Illustrative testimonial</span>
+                </span>
               </figcaption>
             </figure>
           </div>
@@ -590,7 +715,7 @@
               ></a>
               <div class="process-signature">
                 <img
-                  src="./assets/logo-r.png"
+                  src="./public/assets/logo-r.png"
                   alt=""
                   width="52"
                   height="52"
@@ -652,74 +777,203 @@
       </section>
 
       <section
-        class="owner-section light-section"
+        class="studio-owner light-section"
         id="owner"
         aria-labelledby="owner-title"
       >
         <div class="section-shell">
           <div class="section-kicker reveal">
-            <span class="section-number">05 / BEHIND R STUDIO HUB</span
-            ><span class="tiny-cross">+</span>
+            <span class="section-number">05 / BEHIND R STUDIO HUB</span>
+            <span class="tiny-cross" aria-hidden="true">+</span>
           </div>
-          <div class="owner-layout">
-            <div class="owner-portrait-stage reveal">
-              <span class="portrait-caption"
-                >A SMALL STUDIO. A PERSONAL APPROACH.</span
+          <div class="studio-owner-layout">
+            <div class="studio-owner-copy reveal">
+              <p class="studio-owner-eyebrow">
+                A PERSONAL APPROACH TO BUILDING SOFTWARE.
+              </p>
+              <h2 id="owner-title">
+                A real person.<br />Behind every
+                <span class="serif-accent">project.</span>
+              </h2>
+              <div class="studio-owner-name">
+                <strong>Amalia Safira Rhamadany</strong>
+                <span>Owner, R Studio Hub</span>
+              </div>
+              <p>
+                I’m Amalia. I turn everyday problems into websites and
+                applications that people can actually use.
+              </p>
+              <p>
+                With 10 years of project experience, I’ve learned to ask
+                questions early, keep the details clear, and stay close to the
+                people I’m building for.
+              </p>
+              <p>
+                That approach runs through R Studio Hub, from Dapur Mama
+                Catering to RumahFLOW and TernaKu. Every project starts with a
+                conversation about what would make your work easier.
+              </p>
+              <a
+                class="studio-owner-contact"
+                href="https://wa.me/6281944496015"
+                data-contact
               >
-              <div class="portrait-orbit" aria-hidden="true"></div>
+                Let’s talk about your idea
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" />
+                </svg>
+              </a>
+              <div
+                class="studio-owner-socials"
+                aria-label="Amalia’s social profiles"
+              >
+                <a
+                  href="https://www.instagram.com/amaliasafirar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Amalia on Instagram (opens in a new tab)"
+                  >Instagram <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/amalia-safira-rhamadany-b48476148/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Amalia on LinkedIn (opens in a new tab)"
+                  >LinkedIn <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="https://github.com/amaliasr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Amalia on GitHub (opens in a new tab)"
+                  >GitHub <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <div class="studio-owner-visual reveal" data-pointer-spotlight>
+              <div class="studio-owner-glow" aria-hidden="true"></div>
+              <div class="studio-owner-orbit" aria-hidden="true"></div>
+              <span class="studio-owner-portrait-note" aria-hidden="true"
+                >THE PERSON BEHIND THE PIXELS.</span
+              >
               <img
-                src="./assets/owner-portrait.png"
-                alt="Owner of R Studio Hub"
+                class="studio-owner-portrait"
+                src="./public/assets/owner-portrait.png"
+                alt="Amalia Safira Rhamadany, owner of R Studio Hub"
                 width="1087"
                 height="1446"
                 loading="lazy"
                 decoding="async"
               />
-              <div class="owner-portrait-label">
-                <span class="owner-label-mark" aria-hidden="true"
-                  ><img
-                    src="./assets/logo-r.png"
-                    alt=""
-                    width="44"
-                    height="44" /></span
-                ><span><strong>Owner</strong><span>R Studio Hub</span></span>
+              <div class="studio-owner-experience">
+                <span class="studio-owner-experience-number"
+                  >10<span>years</span></span
+                >
+                <span class="studio-owner-experience-label"
+                  >of project<br />experience.</span
+                >
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-up-right" />
+                </svg>
               </div>
             </div>
-            <div class="owner-copy reveal">
-              <span class="eyebrow"
-                >HELLO, FROM THE OTHER SIDE OF THE SCREEN.</span
-              >
-              <h2 id="owner-title">
-                The person<br />behind the
-                <span class="serif-accent">studio.</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="studio-journey light-section"
+        id="journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="section-shell">
+          <div class="section-kicker reveal">
+            <span class="section-number">06 / OUR STORY</span>
+            <span class="tiny-cross" aria-hidden="true">+</span>
+          </div>
+          <div class="studio-journey-layout">
+            <div class="studio-journey-intro reveal">
+              <h2 id="journey-title">
+                Small beginnings.<br />A story still
+                <span class="serif-accent">growing.</span>
               </h2>
-              <p class="owner-lead">
-                Useful software starts with paying attention.
-              </p>
               <p>
-                R Studio Hub is where I bring useful ideas to life. Some start
-                in a kitchen, others at home or on a farm. The aim is the same:
-                make the work a little easier.
+                One invitation led to a project. That project led to new people,
+                bigger challenges, and eventually a studio of our own.
               </p>
-              <p>
-                That’s the thinking behind Dapur Mama Catering, RumahFLOW, and
-                TernaKu—and the starting point for whatever we build next.
-              </p>
-              <p>
-                Have something in mind? Let’s talk it through, in plain
-                language.
-              </p>
-              <div class="owner-signature">
-                <strong>Owner</strong><span>R Studio Hub</span>
-              </div>
-              <a
-                class="text-link"
-                href="https://wa.me/6281944496015"
-                data-contact
-                >Let’s get to know your idea
-                <svg class="icon"><use href="#i-up-right" /></svg
-              ></a>
+              <span class="studio-journey-range"
+                >2017 <span aria-hidden="true">—</span> TODAY</span
+              >
             </div>
+            <ol class="studio-journey-timeline">
+              <li class="studio-journey-milestone reveal">
+                <time datetime="2017">2017</time>
+                <div>
+                  <h3>The first invitation</h3>
+                  <p>
+                    A colleague invited Amalia to join a small project. It
+                    became the starting point for everything that followed.
+                  </p>
+                </div>
+              </li>
+              <li class="studio-journey-milestone reveal">
+                <time datetime="2018">2018</time>
+                <div>
+                  <h3>A first-place finish</h3>
+                  <p>
+                    First place in a web design competition at the provincial
+                    level in Central Java. A milestone that encouraged us to
+                    keep building.
+                  </p>
+                </div>
+              </li>
+              <li class="studio-journey-milestone reveal">
+                <time datetime="2019">2019</time>
+                <div>
+                  <h3>Unitproject Indonesia begins</h3>
+                  <p>
+                    Amalia founded Unitproject Indonesia, giving the work a name
+                    and a place to grow.
+                  </p>
+                </div>
+              </li>
+              <li class="studio-journey-milestone reveal">
+                <time datetime="2020">2020</time>
+                <div>
+                  <h3>Building with more people</h3>
+                  <p>
+                    Collaborations with universities, software development
+                    companies, and media partners brought new systems to life,
+                    including Virtual Expo projects.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="studio-journey-milestone studio-journey-current reveal"
+              >
+                <time datetime="2025">2025</time>
+                <div>
+                  <h3>A new chapter: R Studio Hub</h3>
+                  <p>
+                    Unitproject rebranded as R Studio Hub, with a focus on
+                    practical software solutions for businesses and everyday
+                    life.
+                  </p>
+                  <div class="studio-journey-continuity">
+                    <span
+                      class="studio-journey-continuity-icon"
+                      aria-hidden="true"
+                      >↗</span
+                    >
+                    <p>
+                      <strong>Unitproject is still part of the story.</strong>
+                      It continues as a home for talented freelancers, alongside
+                      R Studio Hub.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
@@ -824,7 +1078,7 @@
         <div class="footer-main">
           <a class="brand" href="#home" aria-label="R Studio Hub home"
             ><img
-              src="./assets/logo-r.png"
+              src="./public/assets/logo-r.png"
               alt=""
               width="44"
               height="44"

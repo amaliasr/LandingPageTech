@@ -18,6 +18,8 @@ const mime = {
   ".svg": "image/svg+xml",
   ".webp": "image/webp",
   ".ico": "image/x-icon",
+  ".txt": "text/plain; charset=utf-8",
+  ".xml": "application/xml; charset=utf-8",
 };
 createServer(async (req, res) => {
   try {
@@ -25,14 +27,14 @@ createServer(async (req, res) => {
       new URL(req.url, "http://localhost").pathname,
     );
     const relative = pathname === "/" ? "index.html" : pathname.slice(1);
-    if (relative !== "index.html" && !/^(assets|vendor|src)\//.test(relative)) {
+    if (
+      !["index.html", "robots.txt", "sitemap.xml"].includes(relative) &&
+      !/^(public\/(?:assets|vendor)|src)\//.test(relative)
+    ) {
       res.writeHead(404);
       return res.end("Not found");
     }
-    const source =
-      !process.argv.includes("--dist") && /^(assets|vendor)\//.test(relative)
-        ? path.join(root, "public")
-        : root;
+    const source = root;
     const file = path.resolve(source, relative);
     if (!file.startsWith(source + path.sep)) {
       res.writeHead(403);
