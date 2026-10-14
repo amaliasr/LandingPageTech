@@ -25,6 +25,8 @@ The production site is generated in `dist/`. Upload that directory's contents to
 
 The included GitHub Actions workflow runs tests and a build. Hostinger separately watches `main` in this repository and publishes pushes to `https://rstudiohub.com/`.
 
+Hostinger caches CSS and JavaScript for up to a week. The local stylesheet and module URLs use a release query (`v=20261014`) to keep an old cached file from breaking a new page. When publishing changes to these files, bump that value together in `index.html`, `src/main.js`, and the Lenis import in `src/style.css`.
+
 ## Included
 
 - Responsive desktop, tablet, and phone layouts, including a collapsible mobile menu.
